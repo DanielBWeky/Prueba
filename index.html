@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto #1 -- Formulario</title>
+  </head>
+  <body>
+    <h1 class="center" id="title">Proyecto #1 - Formulario</h1>
+    <p id="description">Gracias por tomarse el tiempo para realizar esta encuesta</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Ingrese su nombre: </label><input id="name" type="text" required placeholder="Enter your name...">
+      <label for="email" id="email-label">Ingrese su email:</label>
+      <input id="email" type="email" required placeholder="Enter your email...">
+      <label for="number" id="number-label">Ingrese su edad: </label>
+<input id="number" type="number" min="11" max="120" required placeholder="Age">
+<label for="dropdown"id="dropdown-label">¿Qué opción describe mejor su función actual?</label>
+      <select id="dropdown">
+        <option disable="" selected="" value="">Seleccione el rol actual</option>
+        <option value="estudiante">Estudiante</option>
+            <option value="job">Trabajo de tiempo completo</option>
+            <option value="learner">Estudiante a tiempo completo</option>
+            <option value="preferNo">Prefiero no decirlo</option>
+            <option value="other">Otro</option>
+      </select>
+            <div>
+              <p>¿Le gusta ver peliculas?</p>
+      <label for="si"><input type="radio" name="referrer" value="si" Checked>Si</label>
+      <label><input type="radio" name="referrer" value="no"> No</label>
+      </div>
+      <div>
+        <p>¿Cual genero de peliculas prefere ver?</p>
+      <label><input type="checkbox" name="prefer" value="terror"> Terror</label>
+      <label><input type="checkbox" name="prefer" value="accion"> Accion</label>
+      <label><input type="checkbox" name="prefer" value="Drama"> Drama</label>
+      <label><input type="checkbox" name="prefer" value="Comedia"> Comedia</label>
+      <label><input type="checkbox" name="prefer" value="romance"> Romance</label>
+      </div>
+      <p class="center">Sugierenos algunas peliculas</p>
+      <label id="textarea"><textarea type="textarea" id="comments" placeholder="Enter yout comment here"></textarea></lable>
+      <input type="submit" id="submit"></input>
+    </form>
+  </body>
+</html>
